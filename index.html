@@ -22,9 +22,10 @@
         box-shadow: inset 24px 24px 48px #89cac2, inset -24px -24px 48px #bdffff;
       }
       form {
-        margin-top: 30vh;
+        margin-top: 1vh;
       }
       #button {
+        color: gray;
         position: relative;
         left: 24%;
         top: 20px;
@@ -37,16 +38,30 @@
         font-family: myfont;
         src: url(/ethnocentric.otf);
       }
-      h1{
+      h1 {
+        color: gray;
         font-family: myfont;
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
         padding: 10px;
+      }
+
+      .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        width: 300px;
       }
     </style>
   </head>
   <body>
-    <form class="container center_div" action="form.php" method="post">
+    <form class="container center_div" action="index.php" method="post">
+      <div class="images">
+        <img src="/database.png" alt="" />
+      </div>
+
       <div>
         <h1>Saving Information to Database</h1>
       </div>
